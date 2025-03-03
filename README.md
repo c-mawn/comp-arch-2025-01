@@ -8,3 +8,5 @@ For information about the FPGA used, see the repo for the [iceBlinkPico](https:/
 ### Assignment Videos:
 
 [MP1 Video Demo](https://www.youtube.com/watch?v=s-Un3jiAkLg)
+
+[MP2 Video Demo](https://youtube.com/watch/S-07hdB7LVg?feature=share)
