@@ -1,5 +1,5 @@
-// `include "pwm.sv"
-// `include "smooth_cycle.sv"
+`include "pwm.sv"
+`include "smooth_cycle.sv" // I had to comment out the include statements to make the iverilog work
 
 module top(
     input clk,
@@ -8,10 +8,10 @@ module top(
     output RGB_B
 );
     localparam PWM_INTERVAL = 1200;
-    localparam HOLD_OFF_STEPS = 800;      // 0.33333s (1/3 sec)
-    localparam RAMP_STEPS = 400;          // 0.16666667s (1/6 sec)
-    localparam HOLD_ON_STEPS = 800;       // 0.33333s (1/3 sec)
-    localparam PHASE_SHIFT = 800;         // 0.33333s (1/3 sec offset)
+    localparam HOLD_OFF_STEPS = 800;      
+    localparam RAMP_STEPS = 400;          
+    localparam HOLD_ON_STEPS = 800;       
+    localparam PHASE_SHIFT = 800;         
 
     wire [10:0] r_val, g_val, b_val;
     wire r_pwm, g_pwm, b_pwm;
